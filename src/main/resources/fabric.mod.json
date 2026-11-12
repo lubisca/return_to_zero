@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "return_to_zero",
+	"version": "${version}",
+	"name": "Return to Zero",
+	"description": "Per-player death rewind, inspired by Re:Zero. When you die you return to your last checkpoint (position, health, hunger, XP, inventory) and the blocks you placed or broke yourself are undone. Optional Sanity: Renewed integration.",
+	"contributors": ["Me! (author of rbd 1.0.0, CC0, which this project is based on)"],
+	"license": "CC0-1.0",
+	"icon": "assets/return_to_zero/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.returntozero.ReturnToZero"],
+		"modmenu": ["dev.returntozero.client.ModMenuIntegration"]
+	},
+	"mixins": ["return_to_zero.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"sanity_renewed": "*",
+		"modmenu": "*",
+		"cloth-config": "*"
+	}
+}

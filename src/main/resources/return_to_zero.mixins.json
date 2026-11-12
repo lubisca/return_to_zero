@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "dev.returntozero.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"BlockItemMixin",
+		"PlayerAdvancementTrackerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
